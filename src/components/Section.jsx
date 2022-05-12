@@ -1,11 +1,11 @@
-import { useState } from "react";
+import React, { useState } from 'react';
 
 const initialData = {
-  noteId: "",
-  noteTitle: "Sample Title",
-  noteSubtitle: "",
-  noteLabel: "",
-  noteBody: ""
+  noteId: '',
+  noteTitle: 'Sample Title',
+  noteSubtitle: '',
+  noteLabel: '',
+  noteBody: ''
 };
 
 export default function Section({ section }) {
@@ -15,16 +15,16 @@ export default function Section({ section }) {
     section || initialData;
 
   const parseBody = (text) => {
-    const lines = text.split("\n\n");
+    const lines = text.split('\n\n');
 
     return lines.map((line) => {
       const i = lines.indexOf(line) + line.slice(0, 12);
 
       return (
-        <>
-          <p key={i}>{line}</p>
+        <React.Fragment key={i}>
+          <p>{line}</p>
           <br />
-        </>
+        </React.Fragment>
       );
     });
   };
