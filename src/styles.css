@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #222935;
+  color: #ebf5f5;
+  width: 100vw;
+}
+.App {
+  font-family: sans-serif;
+  margin: 0.5rem 0.75rem;
+  width: 90vw;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+header {
+  margin: 0.5rem auto;
+  text-align: center;
+}
+header ol {
+  margin-top: 0.25rem;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr 1fr 2fr;
+  align-items: center;
+  width: 200px;
+  color: #ce6e00;
+}
+.wrapper {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  /* grid-template-columns: minmax(10px, 1fr) minmax(200px, 1fr); */
+  grid-gap: 1rem;
+  align-items: start;
+}
+main {
+  flex: 1 1 500px;
+  background: #354e5c;
+  border-radius: 0.3rem;
+  padding: 0.5rem 0.5rem;
+}
+aside {
+  background: #354e5c;
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.3rem;
+  flex: 0 1 250px;
+  position: sticky;
+  top: 0;
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.fs-xs {
+  font-size: smaller;
+}
+.fs-sm {
+  font-size: small;
+}
+.fs-md {
+  font-size: medium;
+}
+.fs-lg {
+  font-size: large;
+}
+.fs-i {
+  font-style: italic;
+}
+.section-title {
+  text-transform: uppercase;
+}
+
+.section-subtitle {
+  font-size: small;
+  font-style: italic;
+  font-weight: bolder;
+  text-transform: capitalize;
+  margin-bottom: 0.33rem;
+  padding-bottom: 0.33rem;
+  border-bottom: 1px solid white;
+}
+.note-label {
+}
+.note-body {
+  font-weight: 300;
+}
+
+.db {
+  border: 1px dashed #00ffff;
+}
+.db2 {
+  border: 1px dashed #00ffff88;
+  padding: 1px;
+}
+.dbs {
+  border-left: 1px dashed #00ffff;
+  padding: 1px;
+}
+.db2s {
+  border-left: 1px dashed #00ffff88;
+}
+.btn {
+  margin: 0 auto;
+  padding: 0.25rem 0.75rem;
+  background: #ce6e00;
+  border-radius: 0.25rem;
+}
+.btn-raised {
+  border-bottom: 4px solid #b35000;
+}
+
+@media only screen and (max-width: 768px) {
+  aside {
+    flex: 0 0 100%;
+  }
+  .editor {
+    max-height: 200px;
+  }
+}

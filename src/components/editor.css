@@ -1,0 +1,59 @@
+.editor-float {
+  clear: both;
+  float: right;
+}
+.editor-float::before {
+  content: "";
+  display: block;
+  float: right;
+}
+.editor-wrapper {
+}
+.editor-header {
+  width: 100%;
+  padding: 0 0.25rem;
+  font-size: small;
+}
+.editor-title {
+  margin: 0;
+  padding: 0;
+}
+.form-body {
+  width: 100%;
+  padding: 0.25rem 0 0;
+}
+.editor-input {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  width: 100%;
+  margin-top: 0.25rem;
+  padding: 0.5rem;
+  border: none;
+  resize: none;
+  background: #ebf5f5;
+  border-radius: 0.25rem;
+}
+.input-header,
+.input-header::placeholder {
+  font-size: medium;
+  font-weight: bold;
+}
+.editor-input::placeholder {
+  color: #ce6e00;
+}
+.subtitle {
+  font-size: small;
+}
+.subtitle::placeholder {
+  font-size: small;
+}
+
+.editor-footer {
+  border-top: darkslategray 1px solid;
+  margin-bottom: 0.25rem;
+  padding-top: 0.25rem;
+}
+.btn-editor {
+  float: right;
+  width: 100%;
+}
